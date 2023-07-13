@@ -7,3 +7,7 @@ app = Flask(__name__)
 def index():
     return '<h1>TEST</h1>'
 
+
+if __name__ == '__main__':
+    print("I'm inside the if now")
+    app.run(debug=True)
