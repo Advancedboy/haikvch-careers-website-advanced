@@ -26,7 +26,7 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center mt-2 mb-4">Haikvch Careers</h1>
+      <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
       <img
         id="banner"
         class="img-fluid"
@@ -44,7 +44,15 @@
         natus optio repellendus.
       </p>
       <h2 class="text-center mt-2 mb-4">Open positions</h2>
-      <p>TODO - Show the jobs here</p>
+      <p>
+        
+        
+        {% for job in jobs %}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+          
+          
+      </p>
       <div class="text-center">
         <button class="btn btn-primary btn-lg">Contact Us</button>
         <p>Copyright 2022, CoDe inc.</p>
