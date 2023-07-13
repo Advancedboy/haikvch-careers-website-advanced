@@ -1,29 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Haikvch Careers</title>
+    <style>
+      h1 {
+        font-size: 40px;
+        font-family: "Roboto", sans-serif;
+        font-weight: normal;
+        color: rgb(100, 100, 100);
+        text-align: center;
+      }
+
+      #banner {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+      }
+
+      h2 {
+        font-family: "Roboto", sans-serif;
+        font-size: 32px;
+        color: rgb(100, 100, 100);
+        text-align: center;
+      }
+
+      .bodytext {
+        font-family: "Roboto", sans-serif;
+        color: rgb(80, 80, 80);
+      }
+
+      #container {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+
+
+    </style>
   </head>
   <body>
-    <h1>Haikvch Careers</h1>
-    <img
-      src="https://jovian-careers-website.aakashns.repl.co/static/banner.jpeg"
-      alt=""
-      height="320px"
-    />
-    <h2>About Haikvch</h2>
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit,
-      laudantium, similique expedita, quae eligendi magni aperiam saepe adipisci
-      ex quam neque quos provident modi facere officia ipsa? Tempore quia nihil
-      explicabo illum architecto fugiat voluptatem pariatur alias itaque
-      obcaecati nesciunt sequi facilis veritatis consequatur dolor et eaque
-      aliquid, eius adipisci. Praesentium alias, sunt illo nesciunt eius natus
-      optio repellendus.
-    </p>
-    <h2>Open positions</h2>
-    <p>TODO - Show the jobs here</p>
-    <button>Contact Us</button>
+    <div id="container">
+      <h1>Haikvch Careers</h1>
+      <img
+        id="banner"
+        src="https://jovian-careers-website.aakashns.repl.co/static/banner.jpeg"
+        alt=""
+      />
+      <h2>About Haikvch</h2>
+      <p class="bodytext">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit,
+        laudantium, similique expedita, quae eligendi magni aperiam saepe
+        adipisci ex quam neque quos provident modi facere officia ipsa? Tempore
+        quia nihil explicabo illum architecto fugiat voluptatem pariatur alias
+        itaque obcaecati nesciunt sequi facilis veritatis consequatur dolor et
+        eaque aliquid, eius adipisci. Praesentium alias, sunt illo nesciunt eius
+        natus optio repellendus.
+      </p>
+      <h2>Open positions</h2>
+      <p class="bodytext">TODO - Show the jobs here</p>
+      <div style="text-align: center">
+        <button id="contactbutton">Contact Us</button>
+        <p>Copyright 2022, CoDe inc.</p>
+      </div>
+    </div>
   </body>
 </html>
