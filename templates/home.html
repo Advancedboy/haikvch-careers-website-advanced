@@ -35,7 +35,7 @@
     />
     <div class="container">
       <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
-      <div class="row" style="margin-bottom: 16px;">
+      <div class="row" style="margin-bottom: 16px">
         <div class="col-md-6">
           <p class="lead">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -48,13 +48,21 @@
           </p>
         </div>
         <div class="d-none d-md-block col-md-6">
-          <img src="/static/people.avif" alt="" style="height: 320px; border-radius:4px;" />
+          <img
+            src="/static/people.avif"
+            alt=""
+            style="height: 320px; border-radius: 4px"
+          />
         </div>
       </div>
       <h2 class="text-center mt-2 mb-4">Open positions</h2>
       <p>{% for job in jobs %} {% include 'jobitem.html' %} {% endfor %}</p>
       <div class="text-center">
-        <button class="btn btn-primary btn-lg">Contact Us</button>
+        <a
+          href="mailto:haikvch_official@haikvch.com?subject=Application%20for%20work&body=My%20name%3A%20%3Cyour%20name%3E%0D%0A%0D%0AMy%20resume%20link%3A%20%3Cresume%20link%3E%0D%0A%0D%0AMy%20LinkedIn%3A%20%3Clinkedin%20in%3E"
+          class="btn btn-primary btn-lg"
+          >Contact Us</a
+        >
         <p>Copyright 2023, CoDe inc.</p>
       </div>
     </div>

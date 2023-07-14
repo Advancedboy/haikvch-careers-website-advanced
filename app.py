@@ -40,5 +40,10 @@ def list_jobs():
     return jsonify(JOBS)
 
 
+@app.route('/about')
+def about():
+    return '<h1>About page</h1>'
+
+
 if __name__ == '__main__':
     app.run(debug=True)
