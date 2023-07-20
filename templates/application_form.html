@@ -1,0 +1,41 @@
+<h4>Application Form</h4>
+<form action="/job/{{job['id']}}/apply" method="post">
+  <div class="mb-2">
+    <label for="">Full Name</label><br />
+    <input type="text" name="full_name" placeholder="Bruce Wayne" />
+  </div>
+
+  <div class="mb-2">
+    <label for="">Email</label><br />
+    <input type="text" name="email" placeholder="bruce@wayne.com" />
+  </div>
+
+  <div class="mb-2">
+    <label for="">LinkedIn URL</label><br />
+    <input
+      type="text"
+      name="linked_url"
+      placeholder="https://linked.com/in/brucewayne"
+    />
+  </div>
+
+  <div class="mb-2">
+    <label for="">Education</label><br>
+    <textarea name="education" id=""></textarea>
+  </div>
+
+  <div class="mb-2">
+    <label for="">Work Experince</label><br>
+    <textarea name="work_experience" id=""></textarea>
+  </div>
+
+  <div class="mb-2">
+    <label for="">Resume URL</label><br/>
+    <input
+      type="text"
+      name="resume_url"
+    />
+  </div>
+
+  <input class="mb-2" type="submit" />
+</form>
